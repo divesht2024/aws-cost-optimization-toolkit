@@ -15,14 +15,13 @@ Zero manual intervention required after deployment — fully automated, schedule
 - ✅ Zero manual intervention required after initial deployment
 
 ---
-
 ## 📦 What This Toolkit Covers
 
 | Module | What It Detects | Action |
 |--------|----------------|--------|
-| EBS Volume Cleanup | Unattached EBS volumes | SNS alert |
-| Elastic IP Cleanup | Unused Elastic IPs | SNS alert |
-| S3 Cost Optimization | Oversized / unoptimized S3 buckets | SNS alert |
+| EBS Volume Cleanup | Unattached EBS volumes | SNS alert + Auto delete |
+| Elastic IP Cleanup | Unused Elastic IPs | SNS alert + Auto release |
+| S3 Cost Optimization | Oversized / unoptimized S3 buckets | SNS alert + Auto cleanup |
 | EC2 Scheduler | Running EC2 instances during non-business hours | Auto shutdown + startup |
 
 ---

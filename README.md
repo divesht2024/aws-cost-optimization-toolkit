@@ -36,9 +36,9 @@ EventBridge (Cron Schedule)
         ▼
   AWS Lambda (Python/Boto3)
         │
-        ├── Scan EBS Volumes   ──► Unattached? ──► SNS Alert
-        ├── Scan Elastic IPs   ──► Unused?     ──► SNS Alert
-        ├── Scan S3 Buckets    ──► Oversized?  ──► SNS Alert
+        ├── Scan EBS Volumes   ──► Unattached? ──► SNS Alert + Auto Delete
+        ├── Scan Elastic IPs   ──► Unused?     ──► SNS Alert + Auto Release
+        ├── Scan S3 Buckets    ──► Oversized?  ──► SNS Alert + Auto Cleanup
         └── EC2 Scheduler      ──► Stop/Start EC2 instances
                                         │
                                         ▼
